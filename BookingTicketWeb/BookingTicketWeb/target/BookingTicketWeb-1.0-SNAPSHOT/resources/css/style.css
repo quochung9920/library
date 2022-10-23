@@ -1,0 +1,813 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 4, 2022, 5:57:13 PM
+    Author     : ASUS
+*/
+*{
+    /*    font-family: 'Open Sans Condensed', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+}
+
+/*REGISTER*/
+div.register {
+    width: 70%; 
+}
+
+div.register .form-group{
+    margin: 15px 15px 15px 15px;
+}
+
+div.register > h1{
+    margin: 15px 15px 15px 15px;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-image: linear-gradient(to bottom left, #E3FDF5, #FFE6FA);
+    border-bottom:  2px solid pink;
+
+}
+.navbar-brand, .nav-link{
+    color: black;
+}
+.callNumber{
+    animation: doimau 0.8s ease-in infinite;
+}
+
+/*NAV*/
+.menu{
+    background-image: linear-gradient(to bottom right, #E3FDF5, #FFE6FA);
+}
+
+
+/*TABLE*/
+.admin-table{
+    background-color: #24e4ac;
+}
+
+/*FOOTER*/
+#footer{
+    border-top: 2px solid pink;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+    font-weight: bold;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+}
+
+#footer h4{
+    font-family: SFProText;
+    color: purple;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+#footer .phoneInfo{
+    font-size: 36px;
+    font-weight: 900;
+    color: tomato;
+    white-space: nowrap;
+}
+
+/*RESERVATION*/
+/* your CSS goes here*/
+
+#regForm {
+    background-color: #ffffff;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border-radius: 10px
+}
+
+h1 {
+    text-align: center
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa
+}
+
+input.invalid {
+    background-color: #ffdddd
+}
+
+.tab {
+    display: none
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: Raleway;
+    cursor: pointer
+}
+
+.button:hover {
+    opacity: 0.8
+}
+
+#prevBtn {
+    background-color: #bbbbbb
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    background-color: #4CAF50
+}
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.containerbb {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/*
+ Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#priceInfo{
+    animation: doimau 0.9s ease-in infinite;
+}
+@keyframes doimau{
+    from{
+        color:#ffc107; 
+
+    }
+    to{
+        color:#198754;
+    }
+}
+
+/*ADMIN*/
+.box{
+    box-shadow: 3px 3px 3px #7beb12;
+}
+
+.box1{ 
+    box-shadow: 3px 3px 3px #7c4c02;
+}
+
+.box2{ 
+    box-shadow: 3px 3px 3px #198754;
+}
+
+.box3{
+    box-shadow: 3px 3px 3px #ffc107;
+}
+
+.numberInfo{
+    margin: 0;
+    font-weight: bold;
+}
+
+.pink-text{
+    font-size: 13px;
+}
+
+.iconAdmin{
+  float: right;  
+}
+
+/*INDEX*/
+.point > input {
+    width: 300px;
+    display: flex;
+    margin: 25px 15px 25px 15px;
+    border-style: none;
+}
+
+.searchRoute {
+    border-style: groove;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 15px;
+    width: 90%;
+    margin-left: 5%;  
+
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.searchRoute > ul{
+    margin-left: 10%;
+}
+
+.searchRoute > ul > li {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+#search-search {
+    position: relative;
+
+    animation: runSearch  5s linear 2s infinite alternate ;
+}
+@keyframes runSearch {
+    0%   { left:0px; top:0px;}
+    25%  { left:100px; top:0px;}
+    50%  { left:100px; top:50px;}
+    75%  {left:0px; top:50px;}
+    100% {left:0px; top:0px;}
+}
+
+.img1 :hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+div.infomation > div {
+    margin-right: 30px; 
+    border-style: dotted;
+
+    color: orange;
+}
+.h1 {
+    margin:10px;
+    color: orange; 
+    text-align: left;
+}
+.show-p > p {
+    margin-left: 70px;
+}
+.btnpoint {
+    border: black;
+    border-style: groove;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: orange;
+}
+
+.selectPoint{
+    border-style: ridge;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.selectPoint > h5{
+    text-align: center;
+    margin:  10px;
+}
+
+.btnSearch > input {
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+}
+
+#startingpoint1{
+    animation: doimauboder 0.9s ease-in infinite;
+}
+@keyframes doimauboder{
+    from{
+        border-color:#FFFF00; 
+
+    }
+    to{
+        border-color:#00FA9A;
+    }
+    to{
+        border-color:#EE82EE;
+    }
+}
+#route-img {
+    height: 250px;
+    transition: transform 4s ;
+}
+
+#route-img:hover {
+    transform: scale(1.1);
+
+}
+#chatluong {
+    margin-top: 30px; 
+    color:orange; 
+    font-size: 50px; 
+    font-family: SFProText; 
+    text-align: center
+}
+
+/*TRIP*/
+#nen {
+    margin: 20px 0 20px 10px ;
+    padding: 20px 12px 12px 12px;
+    border-radius: 10px 10px 0 0;
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    animation: doimauh1 2s infinite;    
+    box-shadow: 4px 4px 4px black; 
+}  
+@keyframes doimauh1 {
+    from {
+        background-image: linear-gradient(to right, #8cd9b2, white);
+    }
+    to {
+        background-image: linear-gradient(to right,white, #c7ff82) ;
+    }
+
+}
+
+#blocktrip {
+    display: flex; 
+    border: 3px ridge; 
+    margin: 10px;
+    /*background: #f2ffcc;*/
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: 98%;
+/*    box-shadow: 3px 3px 3px #198754;*/
+}
+#blocktrip:hover {     
+     /*box-shadow:  10px  10px  5px lightgrey;*/
+     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#trip-right {
+    width: 60%; 
+    margin-left: 20px; 
+    padding: 10px; 
+    border-left: 1px solid gray;
+}
+
+#trip-a {
+    display: flex; 
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#trip-a > a {
+    width: 45%; 
+    font-size: 20px;
+}
+#trip-p {
+    display: flex; 
+    margin-top: 30px; 
+    font-size: 20px;
+}
+#p-1{
+    width: 63%;
+    
+}
+#p-2{
+    width: 50%;
+}
+#search-departureday {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 120px;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 20%;
+
+/*    background-image:linear-gradient(to right, white,   #c9ffdb, white,   #c9ffdb);*/
+}
+
+#departureday1 {
+    margin-left: 20px;
+    width: 30%;
+    margin-top: 35px;
+    height:50px;
+}
+
+#submitdepartureday {
+    margin-left: 72%;
+    width:20%;
+   font-weight: bold;
+    height: 55px;
+    font-size: 23px;
+    margin-top: 8px;
+    background:linear-gradient(to right, white, rgba(100, 233, 100, 0.815),rgba(96, 198, 238, 0.473), white);
+    border: none;
+/*    color: #1f708a;*/
+}
+#trip-img {
+    height: 250px;
+    transition: transform 50s ;
+}
+
+#trip-img:hover {
+    transform: rotate(180deg);
+
+}
+
+/*COMMENT*/
+
+/*COMMENT*/
+.divcomment {
+    background: linear-gradient(#bed9ff, #bbffd1);
+    width: 80%;
+    margin-left: 10%;
+}
+#sendcomment {
+    background: linear-gradient(#bed9ff, #bbffd1);
+    /*background: linear-gradient(#ffffc9,  #ffe8ff);*/
+    border: white;
+    height: 50px;
+    font-size: 22px;
+    color: black;
+    border-radius: 12px;
+}
+#comment {
+    /*position:fixed;*/
+    animation: chaychu 20s infinite, doimauchu 3s infinite ;
+    width: 100%;
+    font-size: 55px;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-left:40px;
+
+
+}
+@keyframes chaychu {
+    0% {
+        margin-left: 0;
+    }
+    50%{
+        margin-left: 30%;
+    }
+    100% {
+        margin-left: 1%;
+    }
+}
+@keyframes doimauchu {
+    from {
+
+        text-shadow: 3px 2px rgb(65, 238, 238) ;
+    }
+    to {
+        text-shadow: 3px 2px  rgb(39, 243, 39);
+    }
+}
+body{
+    margin-top:20px;
+
+}
+
+.be-comment-block {
+    margin-bottom: 50px !important;
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    padding: 50px 70px;
+    border:1px solid #d1ffd1;
+}
+
+.comments-title {
+    font-size: 25px;
+    color: #262626;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-img-comment {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.be-ava-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.be-comment-content {
+    margin-left: 80px;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.be-comment-name {
+    font-size: 15px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-comment-content a {
+    color: #383b43;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.be-comment-time {
+    text-align: right;
+}
+
+.be-comment-time {
+    font-size: 15px;
+    color: #b4b7c1;
+}
+
+.be-comment-text {
+    font-size: 18px;
+    line-height: 18px;
+    color: #7a8192;
+    display: block;
+    background: #f6f6f7;
+    border: 1px solid #edeff2;
+    padding: 15px 20px 20px 20px;
+}
+
+.form-group.fl_icon .icon {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    background: #f6f6f7;
+    color: #b5b8c2;
+    text-align: center;
+    line-height: 50px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.form-group .form-input {
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #b4b7c1;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+    padding-left: 70px;
+}
+
+.form-group textarea.form-input {
+    height: 150px;
+}
+
+/*USER-PROFILE*/
+.cardu {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.cardu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.cardu-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.mb-3u {
+    margin-bottom: 1rem!important;
+}
+
+/*BACK TO TOP*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#myBtn:hover {
+  color: orange;
+}
+
+/*SEAT*/
+.chooseSeatInfo{
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ebedee;
+    margin-bottom: 10px;
+}
+
+.borderArround{
+    border-bottom: 2px inset;
+}
+
+.textActive{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid orange;
+    background-color: lightgoldenrodyellow;
+    color: black !important;
+    margin-left: 145px;
+}
+
+.textSeatInfo{
+    line-height: 20px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.textDisable{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #919ba5;
+    background-color: #c0c6cc;
+    color: black !important;
+    margin-left: 50px;
+}
+
+.status-item{
+    display: flex;
+}
+
+.seatStatus{
+    display: flex;
+    width: 100%;
+    margin: 16px 0;
+    padding: 0 20px;
+    flex-direction: row;
+}
+
+.disableBtn{
+    border: 1px solid #919ba5;
+    background-color: #c0c6cc;
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Raleway;
+    color: black;
+}
+
+.activeBtn{
+    border: 1px solid orange;
+    background-color: lightgoldenrodyellow;
+    max-width: 70px;
+    max-height: 42px;
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Raleway;
+    color: black;
+}
+
+.formatP{
+    font-size: 17px;
+}
+
+/*THỐNG KÊ*/
+
+.search-sec{
+    margin-top: 30px;
+    padding: 2rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+}
+
+/*#table-stats {
+    width: 40%;
+    margin-left: 30%;
+    border: solid;
+}*/

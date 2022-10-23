@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<div class="sidebar">
+
+    <div class="sidebar-background"></div>
+    <div class="sidebar-wrapper scrollbar-inner">
+        <div class="sidebar-content">
+            <div class="user">
+                <div class="avatar-sm float-left mr-2">
+                    <img alt="..." class="avatar-img rounded-circle" th:src="@{~/ad/assets/img/profile.jpg}">
+                </div>
+                <div class="info">
+                    <a aria-expanded="true" data-toggle="collapse" href="#collapseExample">
+                                            <span>
+                                                POWERTHEN
+                                                <span class="user-level">Administrator</span>
+                                                <span class="caret"></span>
+                                            </span>
+                    </a>
+                    <div class="clearfix"></div>
+
+                    <div class="collapse in" id="collapseExample">
+                        <ul class="nav">
+                            <li>
+                                <a href="#">
+                                    <span class="link-collapse">My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="link-collapse">Edit Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a th:href="@{~/admin}">
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                        <span class="badge badge-count">5</span>
+                    </a>
+                </li>
+                <li class="nav-section">
+                                        <span class="sidebar-mini-icon">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </span>
+                    <h4 class="text-section">Components</h4>
+                </li>
+                <!--                    User-->
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#customer">
+                        <i class="fas fa-user-friends"></i>
+                        <p>User</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="customer">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a th:href="@{~/admin/customer}">
+                                    <span class="sub-item">Manage User</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a th:href="@{~/admin/customer/add}">
+                                    <span class="sub-item">Add User</span>
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--                    Category-->
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#category">
+                        <i class="fas fa-archive"></i>
+                        <p>Category</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="category">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a th:href="@{~/admin/category}">
+                                    <span class="sub-item">Manage Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a th:href="@{~/admin/category/add}">
+                                    <span class="sub-item">Add Category</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--                    Product-->
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#product">
+                        <i class="fas fa-microchip"></i>
+                        <p>Product</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="product">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a th:href="@{~/admin/product}">
+                                    <span class="sub-item">Product Manage</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a th:href="@{~/admin/product/chooseCategory}">
+                                    <span class="sub-item">New Product</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--                    Storage-->
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#storage">
+                        <i class="fas fa-store-alt"></i>
+                        <p>Storage</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="storage">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a th:href="@{~/admin/storage}">
+                                    <span class="sub-item">Storage Manage</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a th:href="@{~/admin/history}">
+                                    <span class="sub-item">History</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--                    Order-->
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#order">
+                        <i class="far fa-credit-card"></i>
+                        <p>Order</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="order">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a th:href="@{~/admin/order}">
+                                    <span class="sub-item">Manage Order</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</html>

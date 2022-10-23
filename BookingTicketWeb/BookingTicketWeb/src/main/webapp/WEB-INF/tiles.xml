@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="m_content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="header" value=""/>
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng kí" />
+        <put-attribute name="header" value=""/>
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="userprofile" extends="baseLayout">
+        <put-attribute name="title" value="Trang cá nhân" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/userdetail.jsp" />
+    </definition>
+    <definition name="trip" extends="baseLayout">
+        <put-attribute name="title" value="Chuyến" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/trip.jsp" />
+    </definition>
+    <definition name="reservation" extends="baseLayout">
+        <put-attribute name="title" value="Đặt vé" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/reservation.jsp" />
+    </definition>
+    <definition name="bill" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/bill.jsp" />
+    </definition>
+    <definition name="paybymomo" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán momo" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/paybymomo.jsp" />
+    </definition>
+    <definition name="confirmseat" extends="baseLayout">
+        <put-attribute name="title" value="Xác nhận đặt ghế" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/confirmseat.jsp" />
+    </definition>
+    <definition name="successpage" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán thành công" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/successpage.jsp" />
+    </definition>
+    <definition name="comment" extends="baseLayout">
+        <put-attribute name="title" value="Bình luận" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/comment.jsp" />
+    </definition>
+    <definition name="tickets" extends="baseLayout">
+        <put-attribute name="title" value="Vé xe" />
+       <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/ticket/tickets.jsp" />
+    </definition>
+    <definition name="updateticket" extends="baseLayout">
+        <put-attribute name="title" value="Sửa thông tin vé" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/ticket/updateticket.jsp" />
+    </definition>
+
+    <definition name="admin" extends="baseLayout">
+        <put-attribute name="title" value="Trang quản trị" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/admin.jsp" />
+    </definition>
+    <definition name="routes" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/route/routes.jsp" />
+    </definition>
+    <definition name="addroute" extends="baseLayout">
+        <put-attribute name="title" value="Thêm tuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/route/addroute.jsp" />
+    </definition>
+    <definition name="updateroute" extends="baseLayout">
+        <put-attribute name="title" value="Sửa tuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/route/updateroute.jsp" />
+    </definition>
+    <definition name="edit_image_route" extends="baseLayout">
+        <put-attribute name="title" value="Sửa ảnh tuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/route/edit_image_route.jsp" />
+    </definition>
+    
+    <definition name="trips" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý chuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/trip/trips.jsp" />
+    </definition>
+    <definition name="addtrip" extends="baseLayout">
+        <put-attribute name="title" value="Thêm chuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/trip/addtrip.jsp" />
+    </definition>
+    <definition name="updatetrip" extends="baseLayout">
+        <put-attribute name="title" value="Sửa chuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/trip/updatetrip.jsp" />
+    </definition>
+    <definition name="edit_image_trip" extends="baseLayout">
+        <put-attribute name="title" value="Sửa ảnh chuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/trip/edit_image_trip.jsp" />
+    </definition>
+    
+    <definition name="drivers" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tài xế" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/driver/drivers.jsp" />
+    </definition>
+    <definition name="adddriver" extends="baseLayout">
+        <put-attribute name="title" value="Thêm tài xế" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/driver/adddriver.jsp" />
+    </definition>
+    <definition name="updatedriver" extends="baseLayout">
+        <put-attribute name="title" value="Sửa tài xế" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/driver/updatedriver.jsp" />
+    </definition>
+    
+    <definition name="employees" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý nhân viên" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/employee/employees.jsp" />
+    </definition>
+    <definition name="addemployee" extends="baseLayout">
+        <put-attribute name="title" value="Thêm nhân viên" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/employee/addemployee.jsp" />
+    </definition>
+    <definition name="updateemployee" extends="baseLayout">
+        <put-attribute name="title" value="Sửa nhân viên" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/employee/updateemployee.jsp" />
+    </definition>
+    
+    <definition name="driverdetails" extends="baseLayout">
+        <put-attribute name="title" value="Bảng phân công tài xế" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/driver_detail/driverdetails.jsp" />
+    </definition>
+    <definition name="updatedriverdt" extends="baseLayout">
+        <put-attribute name="title" value="Thay đổi tài xế" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/driver_detail/updatedriverdt.jsp" />
+    </definition>
+    <definition name="adddriverdt" extends="baseLayout">
+        <put-attribute name="title" value="Gán tài xế chuyến xe" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/manages/driver_detail/adddriverdt.jsp" />
+    </definition>
+    <definition name="tripstatistics" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê mật độ chuyến theo tuyến" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/jsp/tripstatistics.jsp" />
+    </definition>
+    <definition name="tripsmonthstats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo tháng" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/jsp/tripsmonthstats.jsp" />
+    </definition>
+    <definition name="tripsquarterstats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo quý" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/jsp/tripsquarterstats.jsp" />
+    </definition>
+    <definition name="tripsyearstats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo năm" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="m_content"
+                       value="/WEB-INF/jsp/tripsyearstats.jsp" />
+    </definition>
+</tiles-definitions>
+

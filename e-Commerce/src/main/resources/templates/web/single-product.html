@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>POWERTHEN</title>
+
+    <meta th:replace="~{web/fragment/library :: meta}"/>
+    <link th:replace="~{web/fragment/library :: link}"/>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Main wrapper -->
+<div class="wrapper" id="wrapper">
+
+    <!-- Header -->
+    <footer th:replace="~{web/fragment/header :: header}"></footer>
+    <!-- Search Popup -->
+    <footer th:replace="~{web/fragment/search :: #main-search}"></footer>
+
+    <!-- Bradcaump area -->
+    <div class="ht__bradcaump__area bg-image--6"></div>
+
+    <!-- Start Shop Page -->
+    <div class="page-shop-sidebar left--sidebar bg--white section-padding--lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wn__single__product">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <img alt="" class="product-image-single" th:src="${product.image}">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="product__info__main">
+                                    <h1 th:utext="${product.name}"></h1>
+                                    <div class="product-reviews-summary d-flex">
+                                        <ul class="rating-summary d-flex">
+
+                                        </ul>
+                                    </div>
+                                    <div class="price-box">
+                                        <span th:utext="${@vncurrency.format(product.getFinalPrice())}"></span>
+                                    </div>
+                                    <div class="product__overview">
+                                        <strong>Thông số kỹ thuật</strong>
+                                        <br>
+                                        <table>
+                                            <tr th:each="fieldDetail : ${product.fieldDetails}">
+                                                <td th:utext="${fieldDetail.field.field}"></td>
+                                                <td th:utext="${fieldDetail.detail}"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="box-tocart d-flex">
+                                        <div class="addtocart__actions" type="submit">
+                                            <button class="tocart">
+                                                <a th:href="@{~/web/cart/add/{id}(id=${product.id})}">Add to Cart</a>
+                                            </button>
+                                        </div>
+                                        <div class="addtocart__actions">
+                                            <button class="tocart" style="background: #0a97ad; margin-left: 20px"
+                                                    th:if='${session.customer != null}' type="submit">
+                                                <a th:href="@{~/admin/product/edit/{id}(id=${product.id})}"
+                                                   th:if='${session.customer.role.equals("ROLE_ADMIN")}'>Edit
+                                                    Information</a>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_meta">
+                                    </div>
+                                    <div class="product-share">
+                                        <ul>
+                                            <li class="categories-title">Share :</li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-social-twitter icons"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-social-tumblr icons"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-social-facebook icons"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-social-linkedin icons"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__info__detailed">
+                        <div class="pro_details_nav nav justify-content-start" role="tablist">
+                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-details"
+                               role="tab">Details</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-review" role="tab">Reviews</a>
+                        </div>
+                        <div class="tab__container">
+                            <!-- Start Single Tab Content -->
+                            <div class="pro__tab_label tab-pane fade show active" id="nav-details" role="tabpanel">
+                                <div class="description__attribute" th:utext="${product.description}">
+
+                                </div>
+                            </div>
+                            <!-- End Single Tab Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Shop Page -->
+
+    <!-- Footer Area -->
+    <footer th:replace="~{web/fragment/footer :: footer}"></footer>
+</div>
+<!-- //Main wrapper -->
+
+
+<script th:replace="~{web/fragment/library :: script}"></script>
+
+</body>
+</html>
